@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/antartida.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Header {
+  background: linear-gradient(#787eec, #d467a0);
+  box-shadow: 0 20px 30px #d467a0;
+}
+
+.Nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.Nav-logo {
+  padding-left: 20px;
+  color: white;
+}
+.Nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.Nav-button {
+  width: 70%;
+  display: flex;
+  justify-content: end;
+}
+.Nav-link {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+.Nav input, .Nav button {
+  margin: 10px;
+  padding: 5px;
+}
+.Nav input {
+  border: none;
+  font-size: 20px;
+}
+.Nav button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+.Nav button:hover {
+  background-color: pink;
+}
+
+/* RESPONSIVE */
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 100px;
+}
+.Container-padre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.Container-imgs {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.Container-imgs .logo {
+  background-color: red;
+  width: 500px;
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.Container h2 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.Container p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+@media (max-width: 820px) {
+  .Nav {
+    justify-content: space-between;
+  }
+  .Nav-list {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
